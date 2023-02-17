@@ -33,17 +33,18 @@ const mysql = require('mysql2');
 const questions = require('./lib/questions.js')
 
 
-const db = mysql.createConnection(
-    {host:'localhost',
-    user: 'root',
-    password: 'rootr00t!',
-    database: 'employee_db'},
-    // console.log('sucessfully connected to mySql')
-)
+
 function userResponse(answers){
     if(answers.options === 'view all departments'){
-        db.query('SELECT * FROM departments', function(err,results){
-            return results
+        const db = mysql.createConnection(
+            {host:'localhost',
+            user: 'root',
+            password: 'rootr00t!',
+            database: 'employee_db'},
+            console.log('sucessfully connected to mySql')
+        )
+        db.query('SELECT * FROM department', function(err,results){
+            console.table( results)
         })
     }
 }
