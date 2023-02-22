@@ -35,6 +35,7 @@ const questions = require('./lib/questions.js')
 
 
 function userResponse(answers){
+    // write a case switch here instead
     if(answers.options === 'view all departments'){
         const db = mysql.createConnection(
             {host:'localhost',
@@ -46,7 +47,9 @@ function userResponse(answers){
         db.query('SELECT * FROM department', function(err,results){
             console.table( results)
         })
-    }
+        db.end();
+    
+    }return
 }
 inquirer.prompt(questions)
     .then ((answers)=>{
