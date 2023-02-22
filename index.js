@@ -27,40 +27,8 @@
 // WHEN I choose to update an employee role
 // THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 // ```
-const inquirer = require('inquirer');
 
-const mysql = require('mysql2');
-const questions = require('./lib/questions.js')
+const CLI= require('./lib/CLI')
+const cli = new CLI
+cli.run()
 
-
-
-function userResponse(answers){
-    const db = mysql.createConnection(
-        {host:'localhost',
-        user: 'root',
-        password: 'rootr00t!',
-        database: 'employee_db'},
-        console.log('sucessfully connected to mySql')
-    )
-    // write a case switch here instead
-    switch(answers.options){
-        case 'view all departments':
-        db.query('SELECT * FROM department', function(err,results){
-            console.error(err)
-            console.table( results)
-        })
-    ;
-        
-        case 'view all roles':
-            db.query('SELECT * FROM roles',function(err,results){
-                console.table( results)
-            })
-            
-            
-    }return
-}
-inquirer.prompt(questions)
-    .then ((answers)=>{
-        
-    userResponse(answers)
-    })

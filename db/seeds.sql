@@ -17,7 +17,7 @@ VALUES
 (5, 'Cold Call Extraordinaire', 40000, 7),
 (6, 'DevOps Lead', 145000,1),
 (7, 'Human Resources Manager', 86000, 4),
-(8, 'Cheif Marketing Strategist',11000, 6);
+(8, 'Chief Marketing Strategist',11000, 6);
 
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
 VALUES
