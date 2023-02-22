@@ -35,23 +35,32 @@ const questions = require('./lib/questions.js')
 
 
 function userResponse(answers){
+    const db = mysql.createConnection(
+        {host:'localhost',
+        user: 'root',
+        password: 'rootr00t!',
+        database: 'employee_db'},
+        console.log('sucessfully connected to mySql')
+    )
     // write a case switch here instead
-    if(answers.options === 'view all departments'){
-        const db = mysql.createConnection(
-            {host:'localhost',
-            user: 'root',
-            password: 'rootr00t!',
-            database: 'employee_db'},
-            console.log('sucessfully connected to mySql')
-        )
+    switch(answers.options){
+        case 'view all departments':
         db.query('SELECT * FROM department', function(err,results){
+            console.error(err)
             console.table( results)
         })
-        db.end();
-    
+    ;
+        
+        case 'view all roles':
+            db.query('SELECT * FROM roles',function(err,results){
+                console.table( results)
+            })
+            
+            
     }return
 }
 inquirer.prompt(questions)
     .then ((answers)=>{
+        
     userResponse(answers)
     })
