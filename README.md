@@ -6,6 +6,7 @@ This application uses inquirer to visualize and manipulate SQL databases. It can
 
 ## Table of Contents
 - [License](#license)
+- [Credits] (#Credits)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -14,31 +15,37 @@ This application uses inquirer to visualize and manipulate SQL databases. It can
 - [Questions](#Questions)
 
 ## License
- This repository is licensed under
-    MIT
- ## Installation
- there are no install steps
+This repository is licensed under
+   MIT
 
- ## Usage
- Feel free to use this repository to practice with SQL queries!
+## Credits
+Classmates:
+   Mia Ciasullo, Dan Gardner
+Tutor:
+   Rene Trevino
+## Installation
+there are no install steps
 
- ## Contributing
- [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) Contributions adhere to the Contributor Covenant, for more information go to https://www.contributor-covenant.org/
+## Usage
+Feel free to use this repository to practice with SQL queries!
 
- ## Tests
- This application doesn't need tests
+## Contributing
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) Contributions adhere to the Contributor Covenant, for more information go to https://www.contributor-covenant.org/
 
- ## Link
- https://youtu.be/gWZkhH5xk7s
+## Tests
+This application doesn't need tests
 
- ## Questions
+## Link
+https://youtu.be/gWZkhH5xk7s
 
- Feel free to peruse my git hub profile here:
- https://github.com/JoshEflin
+## Questions
 
- Or send an email to:
- eflinjh@gmail.com
- with  any further questions.
+Feel free to peruse my git hub profile here:
+https://github.com/JoshEflin
+
+Or send an email to:
+eflinjh@gmail.com
+with  any further questions.
 
   
  
