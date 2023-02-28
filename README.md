@@ -9,6 +9,7 @@ This application uses inquirer to visualize and manipulate SQL databases. It can
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Link](#Link)
 - [Tests](#tests)
 - [Questions](#Questions)
 
@@ -26,6 +27,9 @@ This application uses inquirer to visualize and manipulate SQL databases. It can
 
  ## Tests
  This application doesn't need tests
+
+ ## Link
+ https://youtu.be/gWZkhH5xk7s
 
  ## Questions
 
